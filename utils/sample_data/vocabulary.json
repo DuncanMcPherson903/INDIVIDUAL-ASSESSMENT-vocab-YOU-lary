@@ -1,0 +1,18 @@
+{
+  "-MiBsfuTafbEQ7eAULxV": {
+    "term": "Fluid",
+    "firebaseKey": "-MiBsfuTafbEQ7eAULxV",
+    "category": "Physics",
+    "category_id": "-MiBsBKGWFEU-yluJkL-",
+    "description": "A liquid, gas, or other material that may continuously move and deform (flow) under an applied shear stress, or external force.",
+    "uid": "QhcepLt5JCRxSS6PqVcMtLeEr4g2"
+  },
+  "-MiBt86VzkC-EGmJnxjm": {
+    "term": "Friction",
+    "firebaseKey": "-MiBt86VzkC-EGmJnxjm",
+    "category": "Mechanics",
+    "category_id": "-MiBsknNSQ6aBG1-2lQS",
+    "description": "The force resisting the relative motion of solid surfaces, fluid layers, and material elements sliding against each other",
+    "uid": "QhcepLt5JCRxSS6PqVcMtLeEr4g2"
+  }
+}
