@@ -20,6 +20,17 @@ const getVocab = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabulary/${firebaseKey}.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data)) // will resolve a single object
+    .catch(reject);
+});
 const createVocab = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocabulary.json`, {
     method: 'POST',
@@ -46,4 +57,22 @@ const updateVocab = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export { createVocab, getVocab, updateVocab };
+const deleteSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabulary/${firebaseKey}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
+export {
+  createVocab,
+  getVocab,
+  updateVocab,
+  getSingleVocab,
+  deleteSingleVocab
+};
