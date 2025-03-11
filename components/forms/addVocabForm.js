@@ -1,7 +1,8 @@
 import renderToDOM from '../../utils/renderToDOM';
 import clearDom from '../../utils/clearDom';
+import selectCategory from './selectCategory';
 
-const addVocabForm = (obj = {}) => {
+const addVocabForm = (user, obj = {}) => {
   clearDom();
   const domString = `
     <form id="${obj.firebaseKey ? `update-vocab--${obj.firebaseKey}` : 'submit-vocab'}" class="mb-4">
@@ -20,6 +21,7 @@ const addVocabForm = (obj = {}) => {
     </form>`;
 
   renderToDOM('#form-container', domString);
+  selectCategory(user, `${obj.category_id || ''}`);
 };
 
 export default addVocabForm;

@@ -12,9 +12,7 @@ const showCategories = (array) => {
   array.forEach((item) => {
     domString += `
     <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <i class="btn btn-secondary" id="filter-vocab-btn--${item.firebaseKey}">${item.name}</i>
-      </div>
+      <i class="btn btn-secondary" id="filter-vocab-btn--${item.firebaseKey}">${item.name}</i>
     </div>
     `;
   });

@@ -2,7 +2,7 @@
   "-MiBsfuTafbEQ7eAULxV": {
     "term": "Fluid",
     "firebaseKey": "-MiBsfuTafbEQ7eAULxV",
-    "category": "Physics",
+    "category_name": "Physics",
     "category_id": "-MiBsBKGWFEU-yluJkL-",
     "description": "A liquid, gas, or other material that may continuously move and deform (flow) under an applied shear stress, or external force.",
     "uid": "QhcepLt5JCRxSS6PqVcMtLeEr4g2"
@@ -10,9 +10,25 @@
   "-MiBt86VzkC-EGmJnxjm": {
     "term": "Friction",
     "firebaseKey": "-MiBt86VzkC-EGmJnxjm",
-    "category": "Mechanics",
+    "category_name": "Mechanics",
     "category_id": "-MiBsknNSQ6aBG1-2lQS",
-    "description": "The force resisting the relative motion of solid surfaces, fluid layers, and material elements sliding against each other",
+    "description": "The force resisting the relative motion of solid surfaces, fluid layers, and material elements sliding against each other.",
+    "uid": "QhcepLt5JCRxSS6PqVcMtLeEr4g2"
+  },
+  "-MiBtwf1BwN9pGavQeR3": {
+    "term": "Pressure",
+    "firebaseKey": "-MiBtwf1BwN9pGavQeR3",
+    "category_name": "Thermodynamics",
+    "category_id": "-MiBuCve4-r_H-RLUOh2",
+    "description": "The force applied perpendicular to the surface of an object per unit area over which that force is distributed.",
+    "uid": "QhcepLt5JCRxSS6PqVcMtLeEr4g2"
+  },
+  "-MiBuOfHv9NCKB_cneij": {
+    "term": "Amicable numbers",
+    "firebaseKey": "-MiBuOfHv9NCKB_cneij",
+    "category_name": "Mathematics",
+    "category_id": "-MiBuU13EaKmGOMjJF-X",
+    "description": "Two different natural numbers related in such a way that the sum of the proper divisors of each is equal to the other number.",
     "uid": "QhcepLt5JCRxSS6PqVcMtLeEr4g2"
   }
 }
