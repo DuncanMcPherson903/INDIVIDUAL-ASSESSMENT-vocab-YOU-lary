@@ -8,7 +8,7 @@ const domStructure = () => {
     <div id="filters" class="d-flex flex-row justify-content-center"></div>
     <div id="form-container"></div>
     <div id="sort-container" class="d-flex flex-row justify-content-center" style="margin-top: 10px"></div>
-    <div id="cards" class="d-flex flex-row justify-content-center""></div>
+    <div id="cards" class="d-flex flex-row justify-content-center flex-wrap"></div>
   </div>`;
 
   renderToDOM('#app', domString);

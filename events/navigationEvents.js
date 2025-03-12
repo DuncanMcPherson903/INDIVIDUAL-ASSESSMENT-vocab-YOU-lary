@@ -24,7 +24,7 @@ const navigationEvents = (user) => {
       clearDom();
       getCategories(user.uid).then(showCategories);
       const searchTerm = document.querySelector('#search-bar').value;
-      getVocab(user.uid).then((vocab) => showVocab(vocab.filter((item) => item.term === searchTerm)));
+      getVocab(user.uid).then((vocab) => showVocab(vocab.filter((item) => (Object.values(item)).includes(searchTerm))));
       showSort();
     }
   });
