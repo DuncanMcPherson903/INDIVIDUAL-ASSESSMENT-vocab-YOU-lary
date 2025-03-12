@@ -1,4 +1,4 @@
-import clearDom from '../utils/clearDom';
+// import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDOM';
 
 const emptyCategories = () => {
@@ -7,7 +7,7 @@ const emptyCategories = () => {
 };
 
 const showCategories = (array) => {
-  clearDom();
+  // clearDom();
   let domString = '';
   array.forEach((item) => {
     domString += `

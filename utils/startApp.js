@@ -8,6 +8,7 @@ import { getVocab } from '../api/vocabData';
 import { showVocab } from '../pages/vocabulary';
 import { getCategories } from '../api/categoryData';
 import { showCategories } from '../pages/categories';
+import showSort from '../pages/sorting';
 
 const startApp = (user) => {
   domStructure(user);
@@ -19,6 +20,7 @@ const startApp = (user) => {
 
   getCategories(user.uid).then((cat) => showCategories(cat));
   getVocab(user.uid).then((vocab) => showVocab(vocab));
+  showSort();
 };
 
 export default startApp;

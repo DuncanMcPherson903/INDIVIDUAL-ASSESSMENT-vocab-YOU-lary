@@ -2,6 +2,7 @@ import { getVocab, getSingleVocab, deleteSingleVocab } from '../api/vocabData';
 // import { showCategories } from '../pages/categories';
 import { showVocab } from '../pages/vocabulary';
 import addVocabForm from '../components/forms/addVocabForm';
+import sortVocab from '../utils/sortVocab';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -25,6 +26,14 @@ const domEvents = (user) => {
           getVocab(user.uid).then(showVocab);
         });
       }
+    }
+    // FOR SORTING BY ALPHABETICAL ORDER
+    if (e.target.id.includes('alphabet-btn')) {
+      getVocab(user.uid).then((vocab) => showVocab(sortVocab(vocab, 'term')));
+    }
+    // FOR SORTING BY DATE SUBMITTED
+    if (e.target.id.includes('date-btn')) {
+      getVocab(user.uid).then((vocab) => showVocab(sortVocab(vocab, 'date_submitted')));
     }
   });
 };
