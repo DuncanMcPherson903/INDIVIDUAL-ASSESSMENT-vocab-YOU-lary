@@ -11,14 +11,14 @@ const showVocab = (array) => {
   let domString = '';
   array.forEach((item) => {
     domString += `
-    <div class="card" style="width: 18rem; margin: 10px">
+    <div class="card border-dark" style="width: 18rem; margin: 10px">
       <div class="card-body">
         <h5 class="card-title">${item.term}</h5>
         <h6 class="card-subtitle mb-2 text-muted">${item.category_name}</h6>
         <p>${item.description}</p>
         <hr>
-        <i class="btn btn-success fas fa-edit" id="edit-vocab-btn--${item.firebaseKey}"></i>
-        <i class="btn btn-danger fas fa-trash" id="delete-vocab-btn--${item.firebaseKey}"></i>
+        <i class="btn btn-success" id="edit-vocab-btn--${item.firebaseKey}"> EDIT</i>
+        <i class="btn btn-danger" id="delete-vocab-btn--${item.firebaseKey}">DELETE</i>
       </div>
     </div>
     `;

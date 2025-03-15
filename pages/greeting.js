@@ -7,9 +7,12 @@ const showGreeting = () => {
   let domString = '';
 
   domString += `
-  <div>
-    <h1>Welcome to Vocab-YOU-lary!</h1>
+  <div id="landing">
+    <h1>Vocab-</h1>
+    <h1>YOU</h1>
+    <h1>-lary!</h1>
   </div>
+  <br>
   <div id="login-form"></div>
   `;
 
