@@ -20,7 +20,7 @@ const navigationEvents = (user) => {
       showSort();
     }
     // Compares search term with database and renders matching items to the dom on clicking Search
-    if (e.target.id.includes('home') || e.target.id.includes('search-btn')) {
+    if (e.target.id.includes('search-btn')) {
       clearDom();
       getCategories(user.uid).then(showCategories);
       const searchTerm = document.querySelector('#search-bar').value;

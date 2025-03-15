@@ -3,8 +3,27 @@
 
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: #c2cad0;
+  color: black;
   text-align: center;
   margin-top: 100px;
+}
+
+#navbar {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#form-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 80%
+}
+
+#landing {
+  font-family: "Sofia", sans-serif;
 }
